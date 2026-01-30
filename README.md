@@ -1,5 +1,50 @@
-Automação de Relatórios Técnicos com Python
+# 🤖 Automação de Relatórios Técnicos com Python
 
-O objetivo deste projeto é processar uma base de dados tabular (CSV) e identificar automaticamente cada cliente e seus indicadores. O sistema gera um gráfico de desempenho personalizado para cada empresa, que é armazenado temporariamente em memória (buffer) para otimização de performance. Este gráfico é inserido em um relatório PDF individualizado.
+Este projeto automatiza o ciclo completo de análise de dados e geração de documentos técnicos, transformando bases de dados brutas em relatórios PDF personalizados com inteligência de armazenamento.
 
-O pipeline possui inteligência de armazenamento: os arquivos são salvos diretamente no Google Drive ou, caso o caminho não seja detectado, são agrupados em uma pasta local e compactados em formato ZIP para download imediato. Toda a operação é executada de ponta a ponta sem necessidade de intervenção manual.
+---
+
+## ⚙️ Funcionamento do Pipeline
+
+O sistema executa um fluxo de trabalho (end-to-end) focado em performance e escalabilidade:
+
+1.  **Leitura e Identificação:** O script processa uma base tabular (CSV) e separa automaticamente cada cliente e seus respectivos indicadores.
+2.  **Geração de Gráficos em Memória:** Para otimizar a velocidade, os gráficos de desempenho são gerados e manipulados em **Buffer (RAM)**, evitando gravações desnecessárias em disco durante o processamento.
+3.  **PDF Individualizado:** Cada empresa recebe um relatório exclusivo contendo seus dados analisados e visuais personalizados.
+
+> [!TIP]
+> **Observação de Dados:** O pipeline foi desenhado para garantir integridade total dos indicadores desde a leitura do CSV até a renderização final no PDF.
+
+---
+
+## ☁️ Inteligência de Armazenamento e Saída
+
+O script possui lógica de detecção de ambiente para garantir que os arquivos nunca sejam perdidos:
+
+* **Prioridade 1 (Nuvem):** Salva os relatórios diretamente em pastas específicas no **Google Drive**.
+* **Prioridade 2 (Local/Fallback):** Caso o caminho da nuvem não seja detectado, o sistema:
+    * Cria uma pasta local organizada.
+    * Agrupa todos os PDFs gerados.
+    * Compacta tudo em um arquivo **ZIP** para download imediato.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+* **Linguagem:** Python
+* **Manipulação de Dados:** Pandas
+* **Visualização:** Matplotlib / Seaborn
+* **Geração de PDF:** FPDF / ReportLab
+* **Integração:** Google Colab / PyDrive
+
+---
+
+## 📂 Como utilizar
+
+1. Faça o upload da sua base de dados no formato `.csv`.
+2. Configure o caminho do seu Google Drive (opcional).
+3. Execute todas as células do notebook.
+4. O sistema entregará os relatórios processados na nuvem ou disponibilizará o link para download do `.zip`.
+
+---
+**Operação 100% automatizada, sem necessidade de intervenção manual.**
