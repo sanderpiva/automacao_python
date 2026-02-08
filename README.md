@@ -1,6 +1,6 @@
 # 🤖 Automação de Relatórios Técnicos com Python
 
-Este projeto automatiza o ciclo completo de análise de dados e geração de documentos técnicos, transformando bases de dados brutas em relatórios PDF personalizados com inteligência de armazenamento.
+Este projeto automatiza o ciclo completo de análise de dados e geração de documentos técnicos, transformando bases de dados brutas em relatórios PDF personalizados com inteligência de armazenamento. Os dados sao fictícios.
 
 ---
 
