@@ -48,3 +48,6 @@ O script possui lógica de detecção de ambiente para garantir que os arquivos 
 
 ---
 **Operação 100% automatizada, sem necessidade de intervenção manual.**
+
+---
+**Autor:** Sander Gustavo Piva 
