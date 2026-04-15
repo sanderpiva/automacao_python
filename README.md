@@ -47,19 +47,23 @@ O script possui lógica de detecção de ambiente para garantir que os arquivos 
 4. O sistema entregará os relatórios processados na nuvem ou disponibilizará o link para download do `.zip`.
 
 ---
-🖼️ Fotos do Projeto
 
-1. Tabela de dados simples em csv: cliente x Período x Eficiência produtiva (%)
+## 🖼️ Fotos do Projeto
+
+1. Tabela de dados simples em csv: Cliente x Período x Eficiência produtiva (%)
 
 <img width="389" height="269" alt="2" src="https://github.com/user-attachments/assets/69faf0ec-fdda-48d1-9a94-7faa2ce12855" />
 
 ---
 
-2. Relatório automatizado com gráfico construído para empresa ficiticia 'Delta Química Ltda'
+2. Relatório automatizado com gráfico construído para empresa ficitícia 'Delta Química Ltda'
+
+---
 
 <img width="864" height="616" alt="1" src="https://github.com/user-attachments/assets/3a3193ff-6ea8-4708-88dd-c2ae3bb164b5" />
 
 ---
+
 **Operação 100% automatizada, sem necessidade de intervenção manual.**
 
 ---
